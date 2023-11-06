@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <GridLayout
+        android:id="@+id/grid"
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+        android:layout_centerInParent="true"
+        android:columnCount="8"
+        android:rowCount="8">
+
+    </GridLayout>
+
+    <ImageView
+        android:id="@+id/image2"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_alignParentRight="true"
+        android:src="@drawable/green"/>
+    <CheckBox
+        android:id="@+id/check2"
+        android:layout_below="@id/image2"
+        android:layout_alignParentRight="true"
+        android:layoutDirection="rtl"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="AI"
+        />
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/pass2"
+        android:layout_alignParentRight="true"
+        android:layout_below="@id/check2"
+        android:backgroundTint="#808080"
+        android:enabled="false"
+        android:text="Pass"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toLeftOf="@id/image2"
+        android:id="@+id/nb2"
+        />
+
+
+
+    <ImageView
+        android:id="@+id/image1"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_alignParentLeft="true"
+        android:src="@drawable/red"/>
+    <CheckBox
+        android:id="@+id/check1"
+        android:layout_below="@id/image1"
+        android:layout_alignParentLeft="true"
+        android:layoutDirection="ltr"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="AI"
+        />
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/pass1"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@id/check1"
+        android:backgroundTint="#808080"
+        android:enabled="false"
+        android:text="Pass"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/image1"
+        android:id="@+id/nb1"
+        />
+
+
+
+    <ImageView
+        android:id="@+id/image4"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:src="@drawable/blue"/>
+
+    <CheckBox
+        android:id="@+id/check4"
+        android:layout_above="@id/image4"
+        android:layout_alignParentRight="true"
+        android:layoutDirection="rtl"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="AI"
+        />
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/pass4"
+        android:layout_alignParentRight="true"
+        android:layout_above="@id/check4"
+        android:backgroundTint="#808080"
+        android:enabled="false"
+        android:text="Pass"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toLeftOf="@id/image4"
+        android:layout_alignParentBottom="true"
+        android:id="@+id/nb4"
+        />
+
+
+    <ImageView
+        android:id="@+id/image3"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentBottom="true"
+        android:src="@drawable/yellow"/>
+
+    <CheckBox
+        android:id="@+id/check3"
+        android:layout_above="@id/image3"
+        android:layout_alignParentLeft="true"
+        android:layoutDirection="rtl"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="AI"
+        />
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/pass3"
+        android:layout_alignParentLeft="true"
+        android:layout_above="@id/check3"
+        android:backgroundTint="#808080"
+        android:enabled="false"
+        android:text="Pass"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/image3"
+        android:layout_alignParentBottom="true"
+        android:id="@+id/nb3"
+        />
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/currentTurn"
+        android:layout_centerHorizontal="true"
+        android:textSize="25sp"
+        android:id="@+id/turnTXT"
+        />
+
+    <ImageView
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:id="@+id/turnIMG"
+        android:layout_below="@id/turnTXT"
+        android:layout_centerHorizontal="true"
+        />
+
+</RelativeLayout>

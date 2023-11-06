@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Othello</string>
+    <string name="currentTurn">tour:</string>
+    <string name="AiPlay">IA</string>
+    <string name="pass">passer</string>
+</resources>
